@@ -132,27 +132,6 @@ Prevents duplicate orders, double payments, corrupted saga state.
 
 ---
 
-## Technology Stack
-Layer | Technology
---- | ---
-Language | Java 25
-Framework | Spring Boot 4
-Gateway | Spring Cloud Gateway (WebFlux)
-Messaging | Apache Kafka
-Security | Spring Security + JWT
-Persistence | MySQL
-Cache | Redis
-Retry | Spring Kafka
-Observability | Micrometer
-Serialization | JSON (Jackson)
-
----
-
-## Important Note on Java 25 & Spring Boot 4
-This project targets Java 25 and Spring Boot 4 to validate architectural correctness and failure-handling semantics (Kafka, DLT, retry, saga) without coupling to experimental APIs. The goal is correctness and reliability over showcasing bleeding-edge framework features.
-
----
-
 ## What This Project Proves
 - Framework upgrades do not require architecture rewrites
 - Reliability comes from design, not annotations
